@@ -1,0 +1,1498 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+<script src="{% static 'js/jquery.js' %}"></script>
+<body class="index-page sidebar-collapse">
+
+    <!-- responsive-header -->
+    <nav class="navbar direction-ltr fixed-top header-responsive">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="#pablo">
+                    <img src="{% static 'assets/img/logo.png' %}" height="24px" alt="">
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+                <div class="search-nav default">
+                    <form action="">
+                        <input type="text" placeholder="جستجو ...">
+                        <button type="submit"><img src="{% static 'assets/img/search.png' %}" alt=""></button>
+                    </form>
+                    <ul>
+                        <li><a href="#"><i class="now-ui-icons users_single-02"></i></a></li>
+                        <li><a href="#"><i class="now-ui-icons shopping_basket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                <div class="logo-nav-res default text-center">
+                    <a href="#">
+                        <img src="{% static 'assets/img/logo.png' %}" height="36px" alt="">
+                    </a>
+                </div>
+                <ul class="navbar-nav default">
+                    <li class="sub-menu">
+                        <a href="#">کالای دیجیتال</a>
+                        <ul>
+                            <li class="sub-menu">
+                                <a href="#">لوازم جانبی گوشی</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">کیف و کاور گوشی</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">پاور بانک</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">هندزفری،هدفون</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">پایه نگهدارنده گوشی</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#">گوشی موبایل</a>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">آیفون اپل</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">هوآوی</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ساعت هوشمند</a>
+                            </li>
+                            <li>
+                                <a href="#">اسپیکر بلوتوث و با سیم</a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#">موبایل</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Apple</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Asus</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">HTC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">LG</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">آرایشی،بهداشت</a>
+                        <ul>
+                            <li class="sub-menu">
+                                <a href="#">لوازم جانبی گوشی</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">کیف و کاور گوشی</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">پاور بانک</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">هندزفری،هدفون</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">پایه نگهدارنده گوشی</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#">گوشی موبایل</a>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">آیفون اپل</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">هوآوی</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ساعت هوشمند</a>
+                            </li>
+                            <li>
+                                <a href="#">اسپیکر بلوتوث و با سیم</a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#">موبایل</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Apple</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Asus</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">HTC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">LG</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">خودرو،ابزار و اداری</a>
+                        <ul>
+                            <li class="sub-menu">
+                                <a href="#">لوازم جانبی گوشی</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">کیف و کاور گوشی</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">پاور بانک</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">هندزفری،هدفون</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">پایه نگهدارنده گوشی</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#">گوشی موبایل</a>
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">آیفون اپل</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">هوآوی</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ساعت هوشمند</a>
+                            </li>
+                            <li>
+                                <a href="#">اسپیکر بلوتوث و با سیم</a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#">موبایل</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Apple</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Asus</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">HTC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">LG</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">مد و پوشاک</a>
+                    </li>
+                    <li>
+                        <a href="#">خانه و آشپزخانه</a>
+                    </li>
+                    <li>
+                        <a href="#">کتاب،لوازم تحریر</a>
+                    </li>
+                    <li>
+                        <a href="#">ورزش و سفر</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- responsive-header -->
+
+    <div class="wrapper default">
+
+        <!-- header -->
+        <header class="main-header default">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-5">
+                        <div class="logo-area default">
+                            <a href="#">
+                                <img src="{% static 'assets/img/logo.png' %}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-sm-8 col-7">
+                        <div class="search-area default">
+                            <form action="" class="search">
+                                <input type="text" placeholder="نام کالا، برند و یا دسته مورد نظر خود را جستجو کنید…">
+                                <button type="submit"><img src="{% static 'assets/img/search.png' %}" alt=""></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="user-login dropdown">
+                            <a href="#" class="btn btn-neutral dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink1">
+                                ورود / ثبت نام
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <div class="dropdown-item">
+                                    <a class="btn btn-info">ورود به دیجی کالا</a>
+                                </div>
+                                <div class="dropdown-item font-weight-bold">
+                                    <span>کاربر جدید هستید؟</span> <a class="register" href="#">ثبت‌نام</a>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="cart dropdown">
+                            <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink1">
+                                <i class="now-ui-icons shopping_cart-simple"></i>
+                                سبد خرید
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <div class="basket-header">
+                                    <div class="basket-total">
+                                        <span>مبلغ کل خرید:</span>
+                                        <span> ۲۳,۵۰۰</span>
+                                        <span> تومان</span>
+                                    </div>
+                                    <a href="#" class="basket-link">
+                                        <span>مشاهده سبد خرید</span>
+                                        <div class="basket-arrow"></div>
+                                    </a>
+                                </div>
+                                <ul class="basket-list">
+                                    <li>
+                                        <a href="#" class="basket-item">
+                                            <button class="basket-item-remove"></button>
+                                            <div class="basket-item-content">
+                                                <div class="basket-item-image">
+                                                    <img alt="" src="{% static 'assets/img/cart/2324935.jpg' %}">
+                                                </div>
+                                                <div class="basket-item-details">
+                                                    <div class="basket-item-title">هندزفری بلوتوث مدل S530
+                                                    </div>
+                                                    <div class="basket-item-params">
+                                                        <div class="basket-item-props">
+                                                            <span> ۱ عدد</span>
+                                                            <span>رنگ مشکی</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="basket-submit">ورود و ثبت سفارش</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-menu">
+                <div class="container">
+                    <ul class="list float-right">
+                        <li class="list-item list-item-has-children mega-menu mega-menu-col-5">
+                            <a class="nav-link" href="#">کالای دیجیتال</a>
+                            <ul class="sub-menu nav">
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">لوازم
+                                        جانبی گوشی</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">کیف و کاور گوشی</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">پاور بانک</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">هندزفری،هدفون</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">پایه نگهدارنده گوشی</a>
+                                        </li>
+                                        <li class="list-item list-item-has-children">
+                                            <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">گوشی موبایل</a>
+                                            <ul class="sub-menu nav">
+                                                <li class="list-item">
+                                                    <a class="nav-link" href="#">آیفون اپل</a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link" href="#">هوآوی</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-item">
+                                            <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">ساعت هوشمند</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">اسپیکر بلوتوث و با سیم</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">موبایل</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Apple</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">ASUS</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">HTC</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">LG</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Nokia</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Samsung</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Sony</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="nav-link" href="#">تبلت
+                                        و کتابخوان</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Acer</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Amazon</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Apple</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">ASUS</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">HTC</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Samsung</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="nav-link" href="#">دوربین</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Canon</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Casio</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Nikon</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Sony</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="nav-link" href="#">کامپیوتر و
+                                        تجهیزات
+                                        جانبی</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">هارد دیسک</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">نمایشگر</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">مادر بورد</a></li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">پردازنده</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">کارت گرافیک</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <img src="{% static 'assets/img/1636.png' %}" alt="">
+                            </ul>
+                        </li>
+                        <li class="list-item list-item-has-children mega-menu mega-menu-col-5">
+                            <a class="nav-link" href="#">آرایشی،بهداشت و سلامت</a>
+                            <ul class="sub-menu nav">
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">لوازم
+                                        جانبی گوشی</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">کیف و کاور گوشی</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">پاور بانک</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">هندزفری،هدفون</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">پایه نگهدارنده گوشی</a>
+                                        </li>
+                                        <li class="list-item list-item-has-children">
+                                            <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">گوشی
+                                                موبایل</a>
+                                            <ul class="sub-menu nav">
+                                                <li class="list-item">
+                                                    <a class="nav-link" href="#">آیفون اپل</a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link" href="#">هوآوی</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-item">
+                                            <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">ساعت
+                                                هوشمند</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">اسپیکر
+                                                بلوتوث و با سیم</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">موبایل</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Apple</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">ASUS</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">HTC</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">LG</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Nokia</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Samsung</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Sony</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="nav-link" href="#">تبلت
+                                        و کتابخوان</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Acer</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Amazon</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Apple</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">ASUS</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">HTC</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Samsung</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="nav-link" href="#">دوربین</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Canon</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Casio</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Nikon</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Sony</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="nav-link" href="#">کامپیوتر و
+                                        تجهیزات
+                                        جانبی</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">هارد دیسک</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">نمایشگر</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">مادر بورد</a></li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">پردازنده</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">کارت گرافیک</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <img src="{% static 'assets/img/1636.png' %}" alt="">
+                            </ul>
+                        </li>
+                        <li class="list-item list-item-has-children mega-menu mega-menu-col-5">
+                            <a class="nav-link" href="">خودرو،ابزار و اداری</a>
+                            <ul class="sub-menu nav">
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">لوازم
+                                        جانبی گوشی</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">کیف و کاور گوشی</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">پاور بانک</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">هندزفری،هدفون</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">پایه نگهدارنده گوشی</a>
+                                        </li>
+                                        <li class="list-item list-item-has-children">
+                                            <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">گوشی
+                                                موبایل</a>
+                                            <ul class="sub-menu nav">
+                                                <li class="list-item">
+                                                    <a class="nav-link" href="#">آیفون اپل</a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link" href="#">هوآوی</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-item">
+                                            <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">ساعت
+                                                هوشمند</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">اسپیکر
+                                                بلوتوث و با سیم</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="main-list-item nav-link" href="#">موبایل</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Apple</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">ASUS</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">HTC</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">LG</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Nokia</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Samsung</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Sony</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="nav-link" href="#">تبلت
+                                        و کتابخوان</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Acer</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Amazon</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Apple</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">ASUS</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">HTC</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Samsung</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="nav-link" href="#">دوربین</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Canon</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Casio</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Nikon</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">Sony</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-item list-item-has-children">
+                                    <i class="now-ui-icons arrows-1_minimal-left"></i><a class="nav-link" href="#">کامپیوتر و
+                                        تجهیزات
+                                        جانبی</a>
+                                    <ul class="sub-menu nav">
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">هارد دیسک</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">نمایشگر</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">مادر بورد</a></li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">پردازنده</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="nav-link" href="#">کارت گرافیک</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <img src="{% static 'assets/img/1636.png' %}" alt="">
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            <a class="nav-link" href="#">مد و پوشاک</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="nav-link" href="#">خانه و آشپزخانه</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="nav-link" href="#">کتاب،لوازم تحریر</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="nav-link" href="#">ورزش و سفر</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="nav-link" href="#">وسایل نقلیه و صنعتی</a>
+                        </li>
+                        <li class="list-item amazing-item">
+                            <a class="nav-link" href="#" target="_blank">شگفت‌انگیزها</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- header -->
+
+        <!-- main -->
+        <main class="profile-user-page default">
+            <div class="container">
+                <div class="row">
+                    <div class="profile-page col-xl-9 col-lg-8 col-md-12 order-2">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="col-12">
+                                    <h1 class="title-tab-content">اطلاعات شخصی</h1>
+                                </div>
+                                <div class="content-section default">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <p>
+                                                <span class="title">نام و نام خانوادگی :</span>
+                                                <span>{{user.profile.first_name}} {{user.profile.last_name}}</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <p>
+                                                <span class="title">پست الکترونیک :</span>
+                                                <span  >{{user.profile.email}}</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <p>
+                                                <span class="title">شماره تلفن همراه:</span>
+                                                <span>{{user.profile.mobile_number}}</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <p>
+                                                <span class="title">کد ملی :</span>
+                                                <span>{{user.profile.national_code}}</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <p>
+                                                <span class="title">دریافت خبرنامه :</span>
+                                                <span>بله</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <p>
+                                                <span class="title">شماره کارت :</span>
+                                                <span>{{user.profile.pay_number}}</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <a href="{% url 'accounts:edit_profile' %}" class="btn-link-border form-account-link">
+                                                ویرایش اطلاعات شخصی
+                                            </a>
+                                        </div>
+                                        
+                                          <br>
+                                          <br>
+                                          <br>
+                                          <br>
+                                          <br>
+                                          <br>
+                                          
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="col-12">
+                                    <h1 class="title-tab-content">لیست آخرین علاقه مندی ها</h1>
+                                </div>
+                                <div class="content-section default">
+                                    <div class="row">
+                                    
+                                        <div class="col-12">
+                                        
+                                            <div class="profile-recent-fav-row">
+                                            
+                                             <table class="table table-bordered">
+                                              <thead>
+                                              <tr class="table-active">
+                                              <th class = "text-center">عکس محصول</th>
+                                              <th class = "text-center">نام کالا</th>
+                                              <th class = "text-center">قیمت</th>
+                                              <th class = "text-center">دسته بندی</th>
+                                              <th class = "text-center">شماره سفارش</th>
+                                              
+                                              </tr>
+                                              </thead>
+                                              <tbody>
+                                              {% for b in favourite_posts %}
+                                              <tr>
+                                              <td class = "text-center"><a href = "{{b.get_absolute_url}}" ><img height="50px" width="70px" src = "{{b.image.url}}"</img></a></td>
+                                              <td class = "text-center">{{b.name}}</td>
+                                              <td class = "text-center">{{b.price}}</td>
+                                              <td class = "text-center">{{b.category}}</td>
+                                              <td class = "text-center">{{b.created}}</td>
+                                              </tr>
+                                              {% endfor %}
+                                              </tbody>
+                                              </table>
+                                               
+
+                                            </div>
+                                            
+                                        </div>
+                                      
+                                       
+                                        <div class="col-12 text-center">
+                                            <a href="#" class="btn-link-border form-account-link">
+                                                مشاهده و ویرایش لیست مورد علاقه
+                                            </a>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="title-tab-content">لیست آخرین سفارشات</h1>
+                            </div>
+                            <div class="col-lg-12">
+                            <div class="content-section default">
+                                    <div class="row">
+                                    
+                                        <div class="col-12">
+                                        
+                                            <div class="profile-recent-fav-row">
+                                    
+                                            
+                                            
+                <table class="table table-bordered">
+                <thead>
+                    <tr class="table-active">
+                        <th class = "text-center">ردیف</th>
+                        <th class = "text-center">نام کالا</th>
+                        <th class = "text-center">قیمت</th>
+                        <th class = "text-center">تعداد</th>
+                        <th class = "text-center">شناسه سفارش</th>
+                    </tr>
+                </thead>
+                <tbody>
+                 {% for i in itemss %}
+                    <tr>
+                        <td class = "text-center">{{forloop.counter}}</td>
+                        <td class = "text-center">{{i.product}}</td>
+                        <td class = "text-center">{{i.price}}</td>
+                        <td class = "text-center">{{i.quantity}}</td>
+                        <td class = "text-center">{{i.order}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+                                                
+                                                
+                                          
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                      
+                                       
+                                          <div class="col-12 text-center">
+                                            <a href="#" class="btn-link-border form-account-link">
+                                                مشاهده و ویرایش لیست مورد علاقه
+                                            </a>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-page-aside col-xl-3 col-lg-4 col-md-6 center-section order-1">
+                        <div class="profile-box">
+                            <div class="profile-box-header">
+                                <div class="profile-box-avatar">
+                                    <img src="{{user.profile.get_photo_url}}" alt="">
+                                </div>
+                                <button data-toggle="modal" data-target="#myModal" class="profile-box-btn-edit">
+                                    <i class="fa fa-pencil"></i>
+                                </button>
+                                <!-- Modal Core -->
+                                <div class="modal-share modal-width-custom modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title" id="myModalLabel">تغییر نمایه کاربری شما</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <ul class="profile-avatars default text-center">
+                                                    <li>
+                                                        <img class="profile-avatars-item" src="{% static 'assets/img/svg/user.svg' %}"></img>
+                                                    </li>
+                                                    <li>
+                                                        <img class="profile-avatars-item" src="{% static 'assets/img/svg/avatar-1.svg' %}"></img>
+                                                    </li>
+                                                    <li>
+                                                        <img class="profile-avatars-item" src="{% static 'assets/img/svg/avatar-2.svg' %}"></img>
+                                                    </li>
+                                                    <li>
+                                                        <img class="profile-avatars-item" src="{% static 'assets/img/svg/avatar-3.svg' %}"></img>
+                                                    </li>
+                                                    <li>
+                                                        <img class="profile-avatars-item" src="{% static 'assets/img/svg/avatar-4.svg' %}"></img>
+                                                    </li>
+                                                    <li>
+                                                        <img class="profile-avatars-item" src="{% static 'assets/img/svg/avatar-5.svg' %}"></img>
+                                                    </li>
+                                                    <li>
+                                                        <img class="profile-avatars-item" src="{% static 'assets/img/svg/avatar-6.svg' %}"></img>
+                                                    </li>
+                                                    <li>
+                                                        <img class="profile-avatars-item" src="{% static 'assets/img/svg/avatar-7.svg' %}"></img>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal Core -->
+
+                                <!-- Modal Core2 -->
+                                <div class="modal-share modal-width-custom modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title" id="myModalLabel">حساب کاربری شما</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                <div class="col-12">
+                                <div class="col-12">
+                                    <h1 class="title-tab-content">اطلاعات شخصی</h1>
+                                </div>
+                                <div class="content-section default">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <p>
+                                                <span class="title">نام و نام خانوادگی :</span>
+                                                <span>{{user.profile.first_name}} {{user.profile.last_name}}</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <p>
+                                                <span class="title">پست الکترونیک :</span>
+                                                <span>{{user.profile.email}}</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <p>
+                                                <span class="title">شماره تلفن همراه:</span>
+                                                <span>{{user.profile.mobile_number}}</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <p>
+                                                <span class="title">کد ملی :</span>
+                                                <span>{{user.profile.national_code}}</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <p>
+                                                <span class="title">دریافت خبرنامه :</span>
+                                                <span>بله</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <p>
+                                                <span class="title">شماره کارت :</span>
+                                                <span>{{user.profile.pay_number}}</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <a href="profile-additional-info.html" class="btn-link-border form-account-link">
+                                                ویرایش اطلاعات شخصی
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal Core -->
+
+
+
+
+
+                                <!-- Modal Core3 -->
+                                <div class="modal-share modal-width-custom modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title" id="myModalLabel">حساب کاربری شما</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                             <div class="profile-page col-xl-12 col-lg-8 col-md-12 order-2">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="col-12">
+                                    <h1 class="title-tab-content">ویرایش اطلاعات شخصی</h1>
+                                </div>
+                                <div class="content-section default">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h1 class="title-tab-content">حساب شخصی</h1>
+                                        </div>
+                                    </div>
+                                    <form method="POST" action = "{% url 'accounts:edit_profile' %}" class="form-account" enctype = "multipart/form-data">
+                                    {% csrf_token %}
+                                       
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-account-title">نام</div>
+                                                <div class="form-account-row">
+                                                    <input value = "{{user.profile.first_name}}" name="first_name" class="input-field text-right" type="text" placeholder="نام خود را وارد نمایید">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-account-title">نام خانوادگی</div>
+                                                <div class="form-account-row">
+                                                    <input value = "{{user.profile.last_name}}" name="last_name"  class="input-field text-right" type="text" placeholder="نام خانوادگی خود را وارد نمایید">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-account-title">کد ملی</div>
+                                                <div class="form-account-row">
+                                                    <input value = "{{user.profile.national_code}}" name="national_code"  class="input-field" type="text" placeholder="کد ملی خود را وارد نمایید">
+                                                </div>
+                                                <div class="form-account-agree">
+                                                    <label class="checkbox-form checkbox-primary">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox-check"></span>
+                                                    </label>
+                                                    <label for="agree">
+                                                        تبعه خارجی فاقد کد ملی هستم
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-account-title">شماره موبایل</div>
+                                                <div class="form-account-row">
+                                                    <input value = "{{user.profile.mobile_number}}" name="mobile_number"  class="input-field" type="text" placeholder="شماره موبایل خود را وارد نمایید">
+                                                </div>
+                                            </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <div class="form-account-title">آدرس ایمیل</div>
+                                                <div class="form-account-row">
+                                                    <input value = "{{user.profile.email}}" name="email" class="input-field" type="email" placeholder=" آدرس ایمیل خود را وارد نمایید">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-account-title">شماره کارت</div>
+                                                <div class="form-account-row">
+                                                    <input value = "{{user.profile.pay_number}}" name="pay_number"  class="input-field" type="text" placeholder=" شماره کارت خود را وارد نمایید">
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-12 no-padding">
+                                            <div class="form-account-agree">
+                                                <label class="checkbox-form checkbox-primary">
+                                                    <input type="checkbox" id="agree-newspaper">
+                                                    <span class="checkbox-check"></span>
+                                                </label>
+                                                <label for="agree-newspaper">
+                                                    اشتراک در خبرنامه دیجی کالا
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="custom-file">
+                                         <input type="file" name="image" class="custom-file-input" id="validatedCustomFile" >
+                                         <label class="custom-file-label text-left" for="validatedCustomFile">عکس خود را انتخاب کنید.</label>
+                                         <div class="invalid-feedback">فقط عکس قابل قبول است.</div>
+                                        </div>
+
+                                        <div class="col-12 text-center">
+                                            <button  class="btn btn-success">ذخیره</button>
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal Core3 -->
+
+                                <!-- Modal Core4 -->
+        <div class="modal-share modal-width-custom modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">حساب کاربری شما</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <a href="#" class="logo">
+                            <img src="assets/img/logo.png" alt="">
+                        </a>
+                        <div class="account-box-title">تغییر رمز عبور</div>
+                        <div class="account-box-content">
+                            <form method = "POST" action = "{% url 'accounts:change_password' %}" class="form-account">
+                            {% csrf_token %}
+                              {% if msz %}
+                                <div class="alert {{col}}">{{msz}}</div>
+                              {% endif %}
+                                <div class="form-account-title">رمز عبور قبلی</div>
+                                <div class="form-account-row">
+                                    <label class="input-label"><i
+                                            class="now-ui-icons ui-1_lock-circle-open"></i></label>
+                                    <input name="cpwd" class="input-field" type="password" required
+                                        placeholder="رمز عبور قبلی خود را وارد نمایید">
+                                </div>
+                                <div class="form-account-title">رمز عبور جدید</div>
+                                <div class="form-account-row">
+                                    <label class="input-label"><i
+                                            class="now-ui-icons ui-1_lock-circle-open"></i></label>
+                                    <input name="npwd" id="pas" class="input-field" type="password" required onkeyup="check_pass()"
+                                        placeholder="رمز عبور جدید خود را وارد نمایید">
+                                </div>
+                                <div class="form-account-title">تکرار رمز عبور جدید</div>
+                                <div class="form-account-row">
+                                    <label class="input-label"><i
+                                            class="now-ui-icons ui-1_lock-circle-open"></i></label>
+                                    <input id="cpas" class="input-field" type="password" required onkeyup="check_pass()"
+                                        placeholder="رمز عبور جدید خود را مجددا وارد نمایید">
+                                </div>
+                                <div class="form-account-row form-account-submit">
+                                    <div class="parent-btn">
+                                        <button id="sbbtn" class="dk-btn dk-btn-info">
+                                            تغییر رمز عبور
+                                            <i class="now-ui-icons arrows-1_refresh-69"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+    function check_pass(){
+        let p = $("#pas").val();
+        let cp = $("#cpas").val();
+        
+        if(p==cp){
+            $("#pas").css("border","1px solid green");
+            $("#cpas").css("border","1px solid green");
+            // $("#pas").removeClass("alert alert-danger").addClass("alert alert-success");
+            // $("#cpas").removeClass("alert alert-danger").addClass("alert alert-success");
+            $("#sbbtn").removeAttr("disabled");
+        }else{
+            $("#pas").css("border","1px solid red");
+            $("#cpas").css("border","1px solid red");
+            // $("#pas").removeClass("alert alert-success").addClass("alert alert-danger");
+            // $("#cpas").removeClass("alert alert-success").addClass("alert alert-danger");
+
+            $("#sbbtn").attr("disabled","disabled");
+        }
+    }
+</script>
+                                <!-- Modal Core -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                            <div class="profile-box-username">{{user.username}}</div>
+                            <div class="profile-box-tabs">
+                                <a href="password-change.html" class="profile-box-tab profile-box-tab-access">
+                                    <i class="now-ui-icons ui-1_lock-circle-open"></i>
+                                    تغییر رمز
+                                </a>
+                                <a href="{% url 'accounts:logout' %}" class="profile-box-tab profile-box-tab--sign-out">
+                                    <i class="now-ui-icons media-1_button-power"></i>
+                                    خروج از حساب
+                                </a>
+                            </div>
+                        </div>
+                        <div class="responsive-profile-menu show-md">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-navicon"></i>
+                                    حساب کاربری شما
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right text-right">
+                                    <a href="#" class="dropdown-item active-menu">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                    پروفایل
+                                    </a>
+                                    <a href="profile-orders.html" class="dropdown-item">
+                                    <i class="now-ui-icons shopping_basket"></i>
+                                    ویرایش اطلاعات
+                                    </a>
+                                    <a href="profile-orders-return.html" class="dropdown-item">
+                                    <i class="now-ui-icons files_single-copy-04"></i>
+                                    درخواست مرجوعی
+                                    </a>
+                                    <a href="profile-favorites.html" class="dropdown-item">
+                                    <i class="now-ui-icons ui-2_favourite-28"></i>
+                                    لیست علاقمندی ها
+                                    </a>
+                                    <a href="profile-personal-info.html" class="dropdown-item">
+                                    <i class="now-ui-icons business_badge"></i>
+                                    اطلاعات شخصی
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-menu hidden-md">
+                            <div class="profile-menu-header">حساب کاربری شما</div>
+                            <ul class="profile-menu-items">
+                                <li>
+                                    <a href ="#" data-toggle="modal" data-target="#myModal2">
+                                        <i class="now-ui-icons users_single-02"></i>
+                                        پروفایل
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="modal" data-target="#myModal4" href="profile-orders.html">
+                                        <i class="now-ui-icons shopping_basket"></i>
+                                       ویرایش اطلاعات
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'accounts:Order_History'%}">
+                                        <i class="now-ui-icons files_single-copy-04"></i>
+                                        لیست سفارشات
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'shop:post_favourite_list'%}">
+                                        <i class="now-ui-icons ui-2_favourite-28"></i>
+                                        لیست علاقمندی ها
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal5">
+                                        <i class="now-ui-icons business_badge"></i>
+                                        تغیر کلمه عبور
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main -->
+
+        <!-- footer -->
+        <footer class="main-footer default">
+            <div class="back-to-top">
+                <a href="#"><span class="icon"><i class="now-ui-icons arrows-1_minimal-up"></i></span> <span>بازگشت به
+                        بالا</span></a>
+            </div>
+            <div class="container">
+                <div class="footer-services">
+                    <div class="row">
+                        <div class="service-item col">
+                            <a href="#" target="_blank">
+                                <img src="{% static 'assets/img/svg/delivery.svg' %}">
+                            </a>
+                            <p>تحویل اکسپرس</p>
+                        </div>
+                        <div class="service-item col">
+                            <a href="#" target="_blank">
+                                <img src="{% static 'assets/img/svg/contact-us.svg' %}">
+                            </a>
+                            <p>پشتیبانی 24 ساعته</p>
+                        </div>
+                        <div class="service-item col">
+                            <a href="#" target="_blank">
+                                <img src="{% static 'assets/img/svg/payment-terms.svg' %}">
+                            </a>
+                            <p>پرداخت درمحل</p>
+                        </div>
+                        <div class="service-item col">
+                            <a href="#" target="_blank">
+                                <img src="{% static 'assets/img/svg/return-policy.svg' %}">
+                            </a>
+                            <p>۷ روز ضمانت بازگشت</p>
+                        </div>
+                        <div class="service-item col">
+                            <a href="#" target="_blank">
+                                <img src="{% static 'assets/img/svg/origin-guarantee.svg' %}">
+                            </a>
+                            <p>ضمانت اصل بودن کالا</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-widgets">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="widget-menu widget card">
+                                <header class="card-header">
+                                    <h3 class="card-title">راهنمای خرید از دیجی کالا</h3>
+                                </header>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">نحوه ثبت سفارش</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">رویه ارسال سفارش</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">شیوه‌های پرداخت</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="widget-menu widget card">
+                                <header class="card-header">
+                                    <h3 class="card-title">خدمات مشتریان</h3>
+                                </header>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">پاسخ به پرسش‌های متداول</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">رویه‌های بازگرداندن کالا</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">شرایط استفاده</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">حریم خصوصی</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="widget-menu widget card">
+                                <header class="card-header">
+                                    <h3 class="card-title">با دیجی کالا</h3>
+                                </header>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">فروش در دیجی کالا</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">همکاری با سازمان‌ها</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">فرصت‌های شغلی</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">تماس با دیجی کالا</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">درباره دیجی کالا</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <p>از تخفیف‌ها و جدیدترین‌های فروشگاه باخبر شوید:</p>
+                                <form action="">
+                                    <input type="email" class="form-control" placeholder="آدرس ایمیل خود را وارد کنید...">
+                                    <input type="submit" class="btn btn-primary" value="ارسال">
+                                </form>
+                            </div>
+                            <div class="socials">
+                                <p>ما را در شبکه های اجتماعی دنبال کنید.</p>
+                                <div class="footer-social">
+                                    <a href="#" target="_blank"><i class="fa fa-instagram"></i>اینستاگرام دیجی کالا</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <span>هفت روز هفته ، 24 ساعت شبانه‌روز پاسخگوی شما هستیم.</span>
+                        </div>
+                        <div class="col-12 col-lg-2">شماره تماس: 021-123456789</div>
+                        <div class="col-12 col-lg-2">آدرس ایمیل:<a href="#">info@digikala.com</a></div>
+                        <div class="col-12 col-lg-4 text-center">
+                            <a href="#" target="_blank"><img src="{% static 'assets/img/bazzar.png' %}" width="159" height="48" alt=""></a>
+                            <a href="#" target="_blank"><img src="{% static 'assets/img/sibapp.png' %}" width="159" height="48" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <div class="container">
+                    <div class="row">
+                        <div class="site-description col-12 col-lg-7">
+                            <h1 class="site-title">فروشگاه اینترنتی دیجی کالا، بررسی، انتخاب و خرید آنلاین</h1>
+                            <p>
+                                دیجی کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با
+                                پایبندی به سه اصل کلیدی، پرداخت در
+                                محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا، موفق شده تا همگام با فروشگاه‌های
+                                معتبر جهان، به بزرگ‌ترین فروشگاه
+                                اینترنتی ایران تبدیل شود. به محض ورود به دیجی کالا با یک سایت پر از کالا رو به رو
+                                می‌شوید! هر آنچه که نیاز دارید و به
+                                ذهن شما خطور می‌کند در اینجا پیدا خواهید کرد.
+                            </p>
+                        </div>
+                        <div class="symbol col-12 col-lg-5">
+                            <a href="#" target="_blank"><img src="{% static 'assets/img/symbol-01.png' %}" alt=""></a>
+                            <a href="#" target="_blank"><img src="{% static 'assets/img/symbol-02.png' %}" alt=""></a>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <ul class="footer-partners default">
+                                    <li class="col-md-3 col-sm-6">
+                                        <a href=""><img src="{% static 'assets/img/footer/1.svg' %}" alt=""></a>
+                                    </li>
+                                    <li class="col-md-3 col-sm-6">
+                                        <a href=""><img src="{% static 'assets/img/footer/2.svg' %}" alt=""></a>
+                                    </li>
+                                    <li class="col-md-3 col-sm-6">
+                                        <a href=""><img src="{% static 'assets/img/footer/3.svg' %}" alt=""></a>
+                                    </li>
+                                    <li class="col-md-3 col-sm-6">
+                                        <a href=""><img src="{% static 'assets/img/footer/4.svg' %}" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>
+                        استفاده از مطالب فروشگاه اینترنتی دیجی کالا فقط برای مقاصد غیرتجاری و با ذکر منبع بلامانع است.
+                        کلیه حقوق این سایت متعلق
+                        به شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی کالا) می‌باشد.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+
+    </div>
+</body>
+{% endblock content %}
